@@ -138,7 +138,7 @@
             height: 93px;
             width: 1px;
             background-color: white;
-            margin: 0 120px;
+            margin: 0 6vw;
         }
 
         .image-top {
@@ -190,12 +190,14 @@
 
 
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 1400px) {
 
             .box {
                 flex-direction: column;
 
+
             }
+
 
             .secondsection .vertical {
                 height: unset;
@@ -220,11 +222,25 @@
             }
 
             .leftsection {
-                width: 100%;
-                +display: flex;
+                width: 100% !important;
+                display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
 
+            }
+
+            .rightsection {
+                width: 615px !important;
+            }
+
+            .secondsection {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            body{
+                min-width: fit-content;
             }
         }
     </style>
