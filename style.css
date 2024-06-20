@@ -1,0 +1,275 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(63, 23, 88);
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(112, 252, 13);
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(209, 209, 230);
+    font-size: 1.04rem;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+main hr {
+    border: 0;
+    background: darkcyan;
+    height: 1.2px;
+    margin: 60px 84px;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px 0;
+}
+
+.firstsection > div {
+    width: 40%;
+}
+
+.leftsection {
+    font-size: 3rem;
+}
+
+.leftsection .buttons {
+    margin-top: 20px;
+}
+
+.leftsection .btn {
+    padding: 12px 20px;
+    background-color: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.leftsection .btn:hover {
+    background-color: white;
+    color: #1e2167;
+}
+
+.rightsection img {
+    width: 80%;
+    alt: "Background Image";
+}
+
+.purple {
+    color: rgb(170, 107, 228);
+}
+
+.text-gray {
+    color: gray;
+}
+
+#element {
+    color: chartreuse;
+}
+
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.secondsection h1 {
+    font-size: 1.9rem;
+}
+
+.secondsection .box {
+    background-color: white;
+    width: 77vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondsection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 6vw;
+}
+
+.image-top {
+    width: 35px;
+    position: relative;
+    top: -39px;
+    left: -16px;
+    alt: "Icon";
+}
+
+.vertical-title {
+    position: relative;
+    top: 75px;
+    width: 150px;
+    font-size: 14px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 86px;
+    color: chartreuse;
+    width: 150px;
+    font-size: 9px;
+}
+
+footer {
+    background-color: crimson;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer div {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: rgb(112, 252, 13);
+}
+
+.contact-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: rgb(223, 14, 251);
+}
+
+.footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .box {
+        flex-direction: column;
+    }
+
+    .secondsection .vertical {
+        height: unset;
+    }
+
+    .vertical-title,
+    .vertical-desc {
+        left: 45px;
+    }
+
+    .secondsection .box {
+        width: 50vw;
+    }
+
+    .firstsection {
+        flex-direction: column-reverse;
+    }
+
+    .secondsection {
+        height: 141vh;
+    }
+
+    .leftsection {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rightsection {
+        width: 615px !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightsection img {
+        width: 45vw;
+        margin-bottom: 73px;
+    }
+
+    .image-top {
+        top: 133px;
+    }
+
+    .secondsection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        min-width: fit-content;
+    }
+}
