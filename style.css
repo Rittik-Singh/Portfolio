@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -59,7 +58,7 @@ main hr {
     margin: 130px 0;
 }
 
-.firstsection > div {
+.firstsection>div {
     width: 40%;
 }
 
@@ -209,7 +208,7 @@ footer {
 
 .footer-rights {
     text-align: center;
-    color: gray;
+    color: whitesmoke;
     padding: 12px 0;
 }
 
